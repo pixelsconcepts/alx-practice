@@ -8,19 +8,19 @@ int main(void)
     int weight;
 
     printf("Enter your height:");
-    scanf("%lf", &height);
+    scanf("%lf", &height);//prompts user to input height.
     printf("Enter your weight:");
-    scanf("%d", &weight);
+    scanf("%d", &weight);//prompts user to input weight.
 
-    int bmi = weight/(height*height);
+    int bmi = weight/(height*height);//calculates the bmi of the patient.
 
-    if (bmi < 18)
+    if (bmi < 18)//if bmi is less than 18
     {
-        printf("Height: %.1fm\n", height);
-        printf("Weight: %dkg\n", weight);
-        printf("Your BMI is %dkg/m^2. You are underweight\n", bmi);
+        printf("Height: %.1fm\n", height);//prints height of patient
+        printf("Weight: %dkg\n", weight);//prints weight of patient
+        printf("Your BMI is %dkg/m^2. You are underweight\n", bmi);//prints the bmi of the patient
     }
-    else if (bmi >= 18 && bmi <= 25)
+    else if (bmi >= 18 && bmi <= 25) //if bmi is between 18 and 25
     {
         printf("Height: %.1fm\n", height);
         printf("Weight: %dkg\n", weight);
